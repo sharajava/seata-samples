@@ -36,9 +36,14 @@
         <property name="storageService" ref="storageService"/>
     </bean>
 
-    <bean class="io.seata.spring.annotation.GlobalTransactionScanner">
+<!--    <bean class="io.seata.spring.annotation.GlobalTransactionScanner">-->
+<!--        <constructor-arg value="dubbo-demo-app"/>-->
+<!--        <constructor-arg value="my_test_tx_group"/>-->
+<!--    </bean>-->
+
+    <bean class="com.taobao.txc.seata.GlobalTransactionScannerAliyun">
         <constructor-arg value="dubbo-demo-app"/>
-        <constructor-arg value="my_test_tx_group"/>
+        <constructor-arg value="xuanyi_sample_1016" />
     </bean>
 
 </beans>

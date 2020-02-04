@@ -26,7 +26,29 @@
     <artifactId>seata-samples-dubbo</artifactId>
     <packaging>jar</packaging>
     <name>seata-samples-dubbo ${project.version}</name>
+
+    <properties>
+        <gts.sdk.version>2.9.0-T-202002040921</gts.sdk.version>
+    </properties>
+
     <dependencies>
+        <dependency>
+            <groupId>com.taobao.middleware</groupId>
+            <artifactId>logger.api</artifactId>
+            <version>0.2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.taobao.diamond</groupId>
+            <artifactId>diamond-client</artifactId>
+            <version>edas-3.7.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.taobao.txc</groupId>
+            <artifactId>txc-client</artifactId>
+            <version>${gts.sdk.version}</version>
+            <scope>system</scope>
+            <systemPath>/Users/hashen/Downloads/txc-client-${gts.sdk.version}.jar</systemPath>
+        </dependency>
         <dependency>
             <groupId>io.seata</groupId>
             <artifactId>seata-spring</artifactId>
