@@ -18,7 +18,7 @@ public class BusinessController {
      */
     @RequestMapping("/purchase/commit")
     public Boolean purchaseCommit() {
-        businessService.purchase("1001", "2001", 1);
+        businessService.purchase("U100000", "C100000", 1);
         return true;
     }
 
@@ -30,7 +30,7 @@ public class BusinessController {
     @RequestMapping("/purchase/rollback")
     public Boolean purchaseRollback() {
         try {
-            businessService.purchase("1002", "2001", 1);
+            businessService.purchase("U100000", "C100000", 1);
         } catch (Exception e) {
             e.printStackTrace();
             return false;

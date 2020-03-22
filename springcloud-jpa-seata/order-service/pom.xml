@@ -16,6 +16,28 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.taobao.txc</groupId>
+            <artifactId>txc-client</artifactId>
+            <version>2.9.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../common/lib/txc-client-2.9.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.taobao.middleware</groupId>
+            <artifactId>logger.api</artifactId>
+            <version>0.2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.taobao.diamond</groupId>
+            <artifactId>diamond-client</artifactId>
+            <version>edas-3.7.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
@@ -52,6 +74,11 @@
         <dependency>
             <groupId>io.seata</groupId>
             <artifactId>seata-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe</groupId>
+            <artifactId>config</artifactId>
+            <version>1.2.1</version>
         </dependency>
     </dependencies>
 
